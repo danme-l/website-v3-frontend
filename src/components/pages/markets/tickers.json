@@ -1,0 +1,350 @@
+{
+    "^GSPC": {
+        "name": "S&P 500",
+        "description": "The S&P 500 is widely regarded as the best single gauge of large-cap U.S. equities. The index includes 500 leading companies and covers approximately 80% of available market capitalization in the United States.",
+        "link": "https://finance.yahoo.com/quote/%5EGSPC?p=^GSPC&.tsrc=fin-srch",
+        "type": "Indices"
+    },
+    "^DJI": {
+        "name": "Dow Jones Industrial Average",
+        "description": "The Dow Jones Industrial Average represents 30 large, publicly-owned companies in the United States.",
+        "link": "https://finance.yahoo.com/quote/%5EDJI?p=^DJI",
+        "type": "Indices"
+    },
+    "^IXIC": {
+        "name": "Nasdaq Composite",
+        "description": "The Nasdaq Composite Index includes all companies listed on the Nasdaq Stock Market and is known for its technology-heavy focus.",
+        "link": "https://finance.yahoo.com/quote/%5EIXIC?p=^IXIC",
+        "type": "Indices"
+    },
+    "^NYA": {
+        "name": "NYSE Composite",
+        "description": "The NYSE Composite Index is an index that measures the performance of all common stocks listed on the New York Stock Exchange (NYSE).",
+        "link": "https://finance.yahoo.com/quote/%5ENYA?p=^NYA",
+        "type": "Indices"
+    },
+    "^XAX": {
+        "name": "AMEX Composite Index",
+        "description": "The AMEX Composite Index measures the performance of all common stocks listed on the NYSE American (formerly known as the American Stock Exchange).",
+        "link": "https://finance.yahoo.com/quote/%5EXAX?p=^XAX",
+        "type": "Indices"
+    },
+    "^BUK100P": {
+        "name": "Cboe UK 100 Price Return Index",
+        "description": "The Cboe UK 100 Price Return Index tracks the price return of the top 100 stocks traded on the London Stock Exchange (LSE).",
+        "link": "https://finance.yahoo.com/quote/%5EBUK100P?p=^BUK100P",
+        "type": "Indices"
+    },
+    "^RUT": {
+        "name": "Russell 2000 Index",
+        "description": "The Russell 2000 Index measures the performance of 2,000 small-cap companies in the United States.",
+        "link": "https://finance.yahoo.com/quote/%5ERUT?p=^RUT",
+        "type": "Indices"
+    },
+    "^VIX": {
+        "name": "CBOE Volatility Index (VIX)",
+        "description": "The CBOE Volatility Index, often referred to as the VIX, is a popular measure of market volatility and investor sentiment.",
+        "link": "https://finance.yahoo.com/quote/%5EVIX?p=^VIX",
+        "type": "Indices"
+    },
+    "^FTSE": {
+        "name": "FTSE 100 Index",
+        "description": "The FTSE 100 Index represents the 100 largest companies by market capitalization listed on the London Stock Exchange (LSE).",
+        "link": "https://finance.yahoo.com/quote/%5EFTSE?p=^FTSE",
+        "type": "Indices"
+    },
+    "^GDAXI": {
+        "name": "DAX Performance Index",
+        "description": "The DAX Performance Index tracks the performance of the 30 largest and most actively traded German companies listed on the Frankfurt Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5EGDAXI?p=^GDAXI",
+        "type": "Indices"
+    },
+    "^FCHI": {
+        "name": "CAC 40 Index",
+        "description": "The CAC 40 Index represents the 40 most significant stocks listed on Euronext Paris, France's primary stock exchange.",
+        "link": "https://finance.yahoo.com/quote/%5EFCHI?p=^FCHI",
+        "type": "Indices"
+    },
+    "^STOXX50E": {
+        "name": "Euro Stoxx 50 Index",
+        "description": "The Euro Stoxx 50 Index tracks the performance of the 50 largest companies in the Eurozone, which includes countries that use the Euro as their official currency.",
+        "link": "https://finance.yahoo.com/quote/%5ESTOXX50E?p=^STOXX50E",
+        "type": "Indices"
+    },
+    "^N100": {
+        "name": "Euronext 100 Index",
+        "description": "The Euronext 100 Index represents the 100 largest and most liquid companies listed on Euronext stock exchanges, which includes several European countries.",
+        "link": "https://finance.yahoo.com/quote/%5EN100?p=^N100",
+        "type": "Indices"
+    },
+    "^BFX": {
+        "name": "BEL 20 Index",
+        "description": "The BEL 20 Index is the benchmark stock market index of Euronext Brussels in Belgium, consisting of the 20 most significant Belgian stocks.",
+        "link": "https://finance.yahoo.com/quote/%5EBFX?p=^BFX",
+        "type": "Indices"
+    },
+    "IMOEX.ME": {
+        "name": "MOEX Russia Index",
+        "description": "The MOEX Russia Index tracks the performance of the 50 most liquid and capitalized Russian stocks traded on the Moscow Exchange (MOEX).",
+        "link": "https://finance.yahoo.com/quote/IMOEX.ME?p=IMOEX.ME",
+        "type": "Indices"
+    },
+    "^N225": {
+        "name": "Nikkei 225",
+        "description": "The Nikkei 225 is Japan's premier stock market index, representing the 225 most actively traded large-cap companies on the Tokyo Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5EN225?p=^N225",
+        "type": "Indices"
+    },
+    "^HSI": {
+        "name": "Hang Seng Index",
+        "description": "The Hang Seng Index is the leading stock market index in Hong Kong, comprising 50 major companies listed on the Hong Kong Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5EHSI?p=^HSI",
+        "type": "Indices"
+    },
+    "000001.SS": {
+        "name": "Shanghai Composite Index",
+        "description": "The Shanghai Composite Index tracks the performance of all stocks listed on the Shanghai Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/000001.SS?p=000001.SS",
+        "type": "Indices"
+    },
+    "399001.SZ": {
+        "name": "SZSE Component Index",
+        "description": "The SZSE Component Index is a market capitalization-weighted index that tracks the performance of all A-share and B-share listed on the Shenzhen Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/399001.SZ?p=399001.SZ",
+        "type": "Indices"
+    },
+    "^STI": {
+        "name": "Straits Times Index",
+        "description": "The Straits Times Index tracks the performance of the top 30 companies listed on the Singapore Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5ESTI?p=^STI",
+        "type": "Indices"
+    },
+    "^AXJO": {
+        "name": "S&P/ASX 200",
+        "description": "The S&P/ASX 200 is the benchmark stock market index in Australia, comprising the 200 largest and most liquid companies listed on the Australian Securities Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5EAXJO?p=^AXJO",
+        "type": "Indices"
+    },
+    "^AORD": {
+        "name": "All Ordinaries",
+        "description": "The All Ordinaries is the oldest index of shares in Australia, comprising the 500 largest companies listed on the Australian Securities Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5EAORD?p=^AORD",
+        "type": "Indices"
+    },
+    "^BSESN": {
+        "name": "BSE SENSEX",
+        "description": "The BSE SENSEX is the benchmark stock index of the Bombay Stock Exchange in India, representing the 30 largest and most actively traded companies.",
+        "link": "https://finance.yahoo.com/quote/%5EBSESN?p=^BSESN",
+        "type": "Indices"
+    },
+    "^JKSE": {
+        "name": "Jakarta Composite Index",
+        "description": "The Jakarta Composite Index tracks the performance of all stocks listed on the Indonesia Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5EJKSE?p=^JKSE",
+        "type": "Indices"
+    },
+    "^KLSE": {
+        "name": "FTSE Bursa Malaysia KLCI",
+        "description": "The FTSE Bursa Malaysia KLCI is the primary stock market index for the Bursa Malaysia (Malaysia's stock exchange), representing the 30 largest companies by market capitalization.",
+        "link": "https://finance.yahoo.com/quote/%5EKLSE?p=^KLSE",
+        "type": "Indices"
+    },
+    "^NZ50": {
+        "name": "NZX 50 Index",
+        "description": "The NZX 50 Index tracks the performance of the 50 largest and most liquid companies listed on the New Zealand Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5ENZ50?p=^NZ50",
+        "type": "Indices"
+    },
+    "^KS11": {
+        "name": "KOSPI Composite Index",
+        "description": "The KOSPI Composite Index tracks the performance of all common stocks traded on the Korea Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5EKS11?p=^KS11",
+        "type": "Indices"
+    },
+    "^TWII": {
+        "name": "Taiwan Weighted Index",
+        "description": "The Taiwan Weighted Index measures the performance of all common stocks listed on the Taiwan Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5ETWII?p=^TWII",
+        "type": "Indices"
+    },
+    "^GSPTSE": {
+        "name": "S&P/TSX Composite Index",
+        "description": "The S&P/TSX Composite Index is the benchmark Canadian index, representing the performance of about 250 companies listed on the Toronto Stock Exchange.",
+        "link": "https://finance.yahoo.com/quote/%5EGSPTSE?p=^GSPTSE",
+        "type": "Indices"
+    },
+    "GC=F": {
+        "name": "Gold (Futures)",
+        "description": "Gold Futures Contracts traded on COMEX. Gold is a precious metal known for its rarity, beauty, and value. It has been used for ornamental and decorative purposes for centuries. In addition to jewelry, gold has various industrial applications, such as in electronics, dentistry, and aerospace. It is also considered a safe-haven asset and a hedge against inflation and economic uncertainties.",
+        "link": "https://finance.yahoo.com/quote/GC%3DF?p=GC%3DF",
+        "type": "Metals"
+    },
+    "MGC=F": {
+        "name": "Micro Gold Futures",
+        "description": "Micro Gold Futures Contracts traded on COMEX. Micro Gold contracts allow smaller investors to participate in the gold market. Similar to standard gold futures, they represent a fixed amount of gold, but on a smaller scale. Traders use micro gold futures to speculate on gold prices or manage risk in their portfolios.",
+        "link": "https://finance.yahoo.com/quote/MGC%3DF?p=MGC%3DF",
+        "type": "Metals"
+    },
+    "SI=F": {
+        "name": "Silver (Futures)",
+        "description": "Silver Futures Contracts traded on COMEX. Silver is a precious metal known for its electrical conductivity, thermal conductivity, and reflectivity. It is used in various industrial applications, including electronics, solar panels, mirrors, and batteries. Silver is also widely used in jewelry and silverware. Like gold, silver is considered both an industrial metal and a store of value.",
+        "link": "https://finance.yahoo.com/quote/SI%3DF?p=SI%3DF",
+        "type": "Metals"
+    },
+    "SIL=F": {
+        "name": "Silver 100 oz Futures",
+        "description": "Silver 100 oz Futures Contracts traded on COMEX. Silver 100 oz contracts represent 100 troy ounces of silver and are commonly used by investors and traders to hedge against inflation and diversify their investment portfolios. They are also used by industrial consumers for future delivery of silver.",
+        "link": "https://finance.yahoo.com/quote/SIL%3DF?p=SIL%3DF",
+        "type": "Metals"
+    },
+    "PL=F": {
+        "name": "Platinum (Futures)",
+        "description": "Platinum Futures Contracts traded on NYMEX. Platinum is a precious metal known for its high resistance to corrosion and its catalytic properties. It is used in various industrial applications, including catalytic converters in automobiles, chemical processing, and jewelry. Platinum is rarer than gold and is often considered a symbol of prestige and luxury.",
+        "link": "https://finance.yahoo.com/quote/PL%3DF?p=PL%3DF",
+        "type": "Metals"
+    },
+    "HG=F": {
+        "name": "Copper (Futures)",
+        "description": "Copper Futures Contracts traded on COMEX. Copper is an essential industrial metal known for its excellent electrical conductivity and heat resistance. It is widely used in electrical wiring, plumbing, construction, and transportation industries. Copper is considered a bellwether for the global economy due to its significant usage in various economic activities.",
+        "link": "https://finance.yahoo.com/quote/HG%3DF?p=HG%3DF",
+        "type": "Metals"
+    },
+    "PA=F": {
+        "name": "Palladium (Futures)",
+        "description": "Palladium Futures Contracts traded on NYMEX. Palladium is a precious metal with high catalytic properties, making it indispensable in catalytic converters for gasoline-powered vehicles. It is also used in electronics, dentistry, and jewelry. The demand for palladium has been driven by stricter emission standards and the automotive industry's growth.",
+        "link": "https://finance.yahoo.com/quote/PA%3DF?p=PA%3DF",
+        "type": "Metals"
+    },
+    "CL=F": {
+        "name": "Crude Oil (Futures)",
+        "description": "Crude Oil Futures Contracts traded on NYMEX. Crude oil is one of the most important and widely traded commodities in the world. It is a major source of energy and is refined into various products, including gasoline, diesel, and jet fuel. Crude oil prices are influenced by geopolitical events, supply-demand dynamics, and economic indicators.",
+        "link": "https://finance.yahoo.com/quote/CL%3DF?p=CL%3DF",
+        "type": "Oil & Gas"
+    },
+    "HO=F": {
+        "name": "Heating Oil (Futures)",
+        "description": "Heating Oil Futures Contracts traded on NYMEX. Heating oil, also known as No. 2 fuel oil, is used primarily as a heating fuel for residential and commercial buildings. It is derived from crude oil and is similar to diesel fuel. Heating oil prices are influenced by factors such as weather conditions, refinery capacity, and crude oil prices.",
+        "link": "https://finance.yahoo.com/quote/HO%3DF?p=HO%3DF",
+        "type": "Oil & Gas"
+    },
+    "NG=F": {
+        "name": "Natural Gas (Futures)",
+        "description": "Natural Gas Futures Contracts traded on NYMEX. Natural gas is a vital energy source used for heating, electricity generation, and as a feedstock for various industrial processes. It is considered a cleaner-burning fossil fuel compared to coal and oil. Natural gas prices are influenced by weather patterns, storage levels, production rates, and global demand.",
+        "link": "https://finance.yahoo.com/quote/NG%3DF?p=NG%3DF",
+        "type": "Oil & Gas"
+    },
+    "RB=F": {
+        "name": "RBOB Gasoline (Futures)",
+        "description": "RBOB Gasoline Futures Contracts traded on NYMEX. RBOB stands for Reformulated Blendstock for Oxygenate Blending, which is used to produce gasoline. It is a key component in the gasoline production process and is traded as a futures contract. RBOB gasoline prices are influenced by crude oil prices, refinery capacity, and seasonal demand for gasoline.",
+        "link": "https://finance.yahoo.com/quote/RB%3DF?p=RB%3DF",
+        "type": "Oil & Gas"
+    },
+    "BZ=F": {
+        "name": "Brent Crude Oil (Futures)",
+        "description": "Brent Crude Oil Futures Contracts traded on ICE Futures Europe. Brent crude oil is a major global benchmark for oil prices and is extracted from the North Sea. It is widely used in setting international oil prices. Brent crude oil prices are influenced by geopolitical events, supply-demand dynamics, and global economic conditions.",
+        "link": "https://finance.yahoo.com/quote/BZ%3DF?p=BZ%3DF",
+        "type": "Oil & Gas"
+    },
+    "ZC=F": {
+        "name": "Corn (Futures)",
+        "description": "Corn Futures Contracts traded on CBOT (Chicago Board of Trade). Corn is a staple crop and a key ingredient in various food and industrial products. It is used as animal feed, in food processing, and for ethanol production. Corn prices are influenced by weather conditions, global demand, and government policies.",
+        "link": "https://finance.yahoo.com/quote/ZC%3DF?p=ZC%3DF",
+        "type": "Commodities"
+    },
+    "ZO=F": {
+        "name": "Oat (Futures)",
+        "description": "Oat Futures Contracts traded on CBOT (Chicago Board of Trade). Oats are primarily used as animal feed but are also used in various food products, including oatmeal and granola bars. Oat prices are influenced by supply and demand factors in both the human consumption and livestock feed markets.",
+        "link": "https://finance.yahoo.com/quote/ZO%3DF?p=ZO%3DF",
+        "type": "Commodities"
+    },
+    "KE=F": {
+        "name": "KCBT Wheat (Futures)",
+        "description": "KCBT Wheat Futures Contracts traded on KCBT (Kansas City Board of Trade). KCBT Wheat is a variety of wheat known for its higher protein content and is used for making bread and baked goods. Wheat prices are influenced by weather conditions, global demand, and supply chain disruptions.",
+        "link": "https://finance.yahoo.com/quote/KE%3DF?p=KE%3DF",
+        "type": "Commodities"
+    },
+    "ZR=F": {
+        "name": "Rough Rice (Futures)",
+        "description": "Rough Rice Futures Contracts traded on CBOT (Chicago Board of Trade). Rice is a staple food for a large portion of the world's population. Rough rice futures allow participants to manage price risk associated with rice production and consumption.",
+        "link": "https://finance.yahoo.com/quote/ZR%3DF?p=ZR%3DF",
+        "type": "Commodities"
+    },
+    "ZM=F": {
+        "name": "Soybean Meal (Futures)",
+        "description": "Soybean Meal Futures Contracts traded on CBOT (Chicago Board of Trade). Soybean meal is a protein-rich byproduct obtained from crushing soybeans. It is primarily used as animal feed for livestock and poultry. Soybean meal prices are influenced by soybean production, demand for animal feed, and global trade patterns.",
+        "link": "https://finance.yahoo.com/quote/ZM%3DF?p=ZM%3DF",
+        "type": "Commodities"
+    },
+    "ZL=F": {
+        "name": "Soybean Oil (Futures)",
+        "description": "Soybean Oil Futures Contracts traded on CBOT (Chicago Board of Trade). Soybean oil is a vegetable oil derived from soybeans and is used in cooking, food processing, and biodiesel production. Soybean oil prices are influenced by soybean production, demand for cooking oils, and renewable fuel mandates.",
+        "link": "https://finance.yahoo.com/quote/ZL%3DF?p=ZL%3DF",
+        "type": "Commodities"
+    },
+    "ZS=F": {
+        "name": "Soybeans (Futures)",
+        "description": "Soybeans Futures Contracts traded on CBOT (Chicago Board of Trade). Soybeans are a major global commodity used for animal feed, cooking oil, and industrial products. Soybean prices are influenced by weather conditions, trade policies, and demand from China, a major consumer of soybeans.",
+        "link": "https://finance.yahoo.com/quote/ZS%3DF?p=ZS%3DF",
+        "type": "Commodities"
+    },
+    "GF=F": {
+        "name": "Feeder Cattle (Futures)",
+        "description": "Feeder Cattle Futures Contracts traded on CME (Chicago Mercantile Exchange). Feeder cattle are young cattle that are raised for beef production. Feeder cattle futures allow livestock producers and meat processors to hedge against price fluctuations in the cattle market.",
+        "link": "https://finance.yahoo.com/quote/GF%3DF?p=GF%3DF",
+        "type": "Commodities"
+    },
+    "HE=F": {
+        "name": "Lean Hogs (Futures)",
+        "description": "Lean Hogs Futures Contracts traded on CME (Chicago Mercantile Exchange). Lean hogs represent market-weight pigs that are ready for slaughter. Lean hog futures are used by pork producers, processors, and traders to manage price risks in the hog market.",
+        "link": "https://finance.yahoo.com/quote/HE%3DF?p=HE%3DF",
+        "type": "Commodities"
+    },
+    "LE=F": {
+        "name": "Live Cattle (Futures)",
+        "description": "Live Cattle Futures Contracts traded on CME (Chicago Mercantile Exchange). Live cattle are fully grown cattle ready for slaughter. Live cattle futures are used by cattle ranchers, beef processors, and traders to manage price risks associated with cattle production.",
+        "link": "https://finance.yahoo.com/quote/LE%3DF?p=LE%3DF",
+        "type": "Commodities"
+    },
+    "CC=F": {
+        "name": "Cocoa (Futures)",
+        "description": "Cocoa Futures Contracts traded on ICE Futures U.S. Cocoa is a key ingredient in the production of chocolate and various confectionery products. Cocoa prices are influenced by weather conditions, global demand for chocolate, and supply chain disruptions.",
+        "link": "https://finance.yahoo.com/quote/CC%3DF?p=CC%3DF",
+        "type": "Commodities"
+    },
+    "KC=F": {
+        "name": "Coffee C (Futures)",
+        "description": "Coffee C Futures Contracts traded on ICE Futures U.S. Coffee is one of the most widely consumed beverages globally. Coffee C futures allow coffee growers, processors, and traders to manage price risks in the coffee market.",
+        "link": "https://finance.yahoo.com/quote/KC%3DF?p=KC%3DF",
+        "type": "Commodities"
+    },
+    "CT=F": {
+        "name": "Cotton #2 (Futures)",
+        "description": "Cotton #2 Futures Contracts traded on ICE Futures U.S. Cotton is a major agricultural commodity used in the textile industry. Cotton #2 futures help participants hedge against price fluctuations in the cotton market.",
+        "link": "https://finance.yahoo.com/quote/CT%3DF?p=CT%3DF",
+        "type": "Commodities"
+    },
+    "LBS=F": {
+        "name": "Lumber (Futures)",
+        "description": "Lumber Futures Contracts traded on CME (Chicago Mercantile Exchange). Lumber is a key raw material used in construction and homebuilding. Lumber prices are influenced by housing demand, supply constraints, and macroeconomic factors.",
+        "link": "https://finance.yahoo.com/quote/LBS%3DF?p=LBS%3DF",
+        "type": "Commodities"
+    },
+    "OJ=F": {
+        "name": "Orange Juice (Futures)",
+        "description": "Orange Juice Futures Contracts traded on ICE Futures U.S. Orange juice is a popular citrus beverage consumed worldwide. Orange juice futures allow participants to manage price risks in the orange juice market.",
+        "link": "https://finance.yahoo.com/quote/OJ%3DF?p=OJ%3DF",
+        "type": "Commodities"
+    },
+    "SB=F": {
+        "name": "Sugar #11 (Futures)",
+        "description": "Sugar #11 Futures Contracts traded on ICE Futures U.S. Sugar is a widely used sweetener in the food and beverage industry. Sugar #11 futures are used by sugar producers, processors, and traders to hedge against price fluctuations in the sugar market.",
+        "link": "https://finance.yahoo.com/quote/SB%3DF?p=SB%3DF",
+        "type": "Commodities"
+    },
+    "BTC-USD": {
+        "name": "Bitcoin",
+        "description": "Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.",
+        "link": "https://finance.yahoo.com/quote/BTC-USD?p=BTC-USD&.tsrc=fin-srch",
+        "type":"Crypto"
+    }
+}
