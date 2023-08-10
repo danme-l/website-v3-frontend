@@ -12,7 +12,7 @@ function useMarkets(tickers = [], widgetType) {
       tickers.forEach((ticker) => tickerParams.append('tickers', ticker));
 
       try {
-        const response = await fetch(`http://127.0.0.1:5000/markets?${tickerParams.toString()}`);
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/markets?${tickerParams.toString()}`);
         const data = await response.json();
         setMarketsData(data);
       } catch (error) {
