@@ -1,26 +1,3 @@
-// import { useState, useEffect } from 'react';
-
-// function useMarkets(tickers = [], widgetType) {
-//   const [marketsData, setMarketsData] = useState([]);
-
-//   useEffect(() => {
-//     async function fetchMarketsData() {
-//       const tickerParams = new URLSearchParams();
-//       tickers.forEach((ticker) => tickerParams.append('tickers', ticker));
-
-//       const response = await fetch(`http://127.0.0.1:5000/markets?${tickerParams.toString()}`);
-//       const data = await response.json();
-//       setMarketsData(data);
-//     }
-
-//     fetchMarketsData();
-//   }, [widgetType]);
-
-//   return marketsData;
-// }
-
-// export default useMarkets;
-
 import { useState, useEffect } from 'react';
 
 function useMarkets(tickers = [], widgetType) {
@@ -29,7 +6,7 @@ function useMarkets(tickers = [], widgetType) {
 
   useEffect(() => {
     async function fetchMarketsData() {
-      setLoading(true); // Start loading
+      setLoading(true);
 
       const tickerParams = new URLSearchParams();
       tickers.forEach((ticker) => tickerParams.append('tickers', ticker));
@@ -41,7 +18,7 @@ function useMarkets(tickers = [], widgetType) {
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
-        setLoading(false); // Stop loading regardless of success or error
+        setLoading(false); // stop loading regardless of success or error
       }
     }
 

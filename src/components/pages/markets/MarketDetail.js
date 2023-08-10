@@ -1,17 +1,79 @@
-import React from 'react';
-import { Typography, Box } from '@mui/material';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Typography, Box, Button, Menu, MenuItem, CircularProgress } from '@mui/material';
+import { useParams, useNavigate } from 'react-router-dom';
+import useSingleTicker from '../../../hooks/useSingleTicker';
+import TickerChart from './TickerChart';
 import tickersInfo from './tickers.json';
+import Background from "../../background/Background";
+
+function TickerMenu({type}) {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const navigate = useNavigate();
+
+  const handleMenuClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleOptionClick = (ticker) => {
+    setAnchorEl(null)
+    navigate(`/markets/${ticker}`)
+  };
+
+  // filter the tickers based on the selected type
+  const tickersOfType = Object.entries(tickersInfo)
+    .filter(([ticker, data]) => data.type === type)
+    .map(([ticker]) => ticker);
+
+  return (
+    <div>
+      <Button
+        variant='contained'
+        onClick={handleMenuClick}
+      >
+        View More {type}
+      </Button>
+      <Menu
+        anchorEl={anchorEl}
+        open={open}
+        onClose={() => setAnchorEl(null)}
+      >
+        {tickersOfType.map((t) => (
+          <MenuItem onClick={() => handleOptionClick(t)}>
+            <Typography variant='body2'>{t} | {tickersInfo[t]['name']}</Typography>
+          </MenuItem>
+        ))}
+      </Menu>
+          <div>
+            <Button variant='contained' sx={{my:2}} onClick={() => navigate('/markets/')}>Back</Button>
+          </div>
+    </div>
+  );
+}
 
 const MarketDetail = () => {
   const { ticker } = useParams();
+  const tickerData = useSingleTicker(ticker);
+
+  // use the ticker as the key to trigger the chart to re-render on ticker change
+  const tickerKey = `ticker-${ticker}`;
 
   return (
     <Box>
-      <Typography variant='h4'>{tickersInfo[ticker]['name']}</Typography>
+      <Background inputConfigs={{
+          scale:0.08, px:73, py:50, numParticles: 100
+      }}/>
+      <Typography variant='h3'>{tickersInfo[ticker]['name']}</Typography>
       <Typography variant='body1'>{tickersInfo[ticker]['description']}</Typography>
-      {/* TODO render market details based on the ticker */}
-      <Typography variant='body1'>Time series chart and other stuff coming here soon.</Typography>
+      <Box display={'flex'} flexDirection={'row'}>
+        <Box>
+          <Typography variant='h5'>{tickersInfo[ticker]['name']} for the last year</Typography>
+          <TickerChart key={tickerKey} data={tickerData} />
+        </Box>
+        <Box display={'flex'} flexDirection={'row'}>
+          <TickerMenu type={tickersInfo[ticker]['type']} /> 
+        </Box>
+      </Box>
     </Box>
   );
 };

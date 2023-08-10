@@ -9,7 +9,7 @@ import Background from "../../background/Background";
 import CircledShadedButton from "../../utils/CircledShadedButton";
 
 export const Markets = () => {
-  const [widgetMode, setWidgetMode] = useState('dollars');
+  const [widgetMode, setWidgetMode] = useState('percent');
   const [widgetType, setWidgetType] = useState(null);
   const [sourcesVisible, setSourcesVisible] = useState(false);
 

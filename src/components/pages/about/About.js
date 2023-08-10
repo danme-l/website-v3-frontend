@@ -25,7 +25,7 @@ export const About = () => {
                 </Typography>
                 <Box display={'flex'} flexDirection={'row'}>
                     <CircledShadedButton icon={<LinkedIn />} value={`LinkedIn`} link={'https://www.linkedin.com/in/daniel-meleras-29794920a/'} margin={3}/>
-                    <CircledShadedButton icon={<RiFileList3Line />} value={`Resume`} margin={3}/>
+                    <CircledShadedButton icon={<RiFileList3Line />} value={`Resume`} margin={3} link={process.env.PUBLIC_URL + '/assets/docs/danielMeleras.pdf'}/>
                     <CircledShadedButton icon={<SiLichess />} value={`Lichess`} link={'https://lichess.org/@/DanMeleras'} margin={3}/>
                 </Box>
                 <StandardImageList />
