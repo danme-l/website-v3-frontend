@@ -12,7 +12,7 @@ function useSingleTicker(ticker) {
 
       try {
         // fetch the data for the specific ticker
-        const response = await fetch(`${process.env.REACT_APP_API_URL}markets/${ticker}`);
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/markets/${ticker}`);
         if (!response.ok) {
           const errorText = await response.text();
           throw new Error(`HTTP error! Status: ${response.status}, Response: ${errorText}`);

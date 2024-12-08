@@ -11,7 +11,7 @@ function useMarkets(tickers = [], widgetType) {
       const tickerParams = new URLSearchParams();
       tickers.forEach((ticker) => tickerParams.append('tickers', ticker));
       // const apiUrl = `http://localhost:5000/markets?${tickerParams.toString()}`;
-      const apiUrl = `${process.env.REACT_APP_API_URL}markets?${tickerParams.toString()}`;
+      const apiUrl = `${process.env.REACT_APP_API_URL}/markets?${tickerParams.toString()}`;
   
       console.log(`Fetching data from: ${apiUrl}`);
   
