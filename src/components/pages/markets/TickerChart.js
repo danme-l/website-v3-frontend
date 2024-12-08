@@ -1,6 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { useTheme } from '@mui/material';
+import { Typography } from '@mui/material';
 
 const formatDate = (dateString) => {
     const options = { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' };
@@ -29,8 +30,14 @@ const calculateYAxisTicks = (minValue, maxValue, tickCount) => {
     return ticks;
   };
 
-const TickerChart = ({ data }) => {
+const TickerChart = ({ data = [] }) => { // default to empty erray, preventing errors from undefined.map
     const theme = useTheme();
+
+    // guard against empty data
+    if (!data || data.length === 0) {
+        return <Typography variant="body1">No chart data available.</Typography>;
+    }
+
     const minClose = Math.min(...data.map(item => item.Close));
     const maxClose = Math.max(...data.map(item => item.Close));
     const lowerDomain = minClose * 0.97; // 3% lower

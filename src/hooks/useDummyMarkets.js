@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 function useDailyMarkets() {
     const [dailyMarkets, setDailyMarkets] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         async function fetchDailyMarkets() {
@@ -13,7 +14,7 @@ function useDailyMarkets() {
         fetchDailyMarkets();
     }, []);
 
-    return dailyMarkets;
+    return { loading, dailyMarkets };
 }
 
 export default useDailyMarkets;

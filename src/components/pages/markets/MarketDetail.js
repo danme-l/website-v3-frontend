@@ -53,7 +53,8 @@ function TickerMenu({type}) {
 
 const MarketDetail = () => {
   const { ticker } = useParams();
-  const tickerData = useSingleTicker(ticker);
+  const { loading, data : tickerData, error } = useSingleTicker(ticker);
+  console.log(tickerData)
 
   // use the ticker as the key to trigger the chart to re-render on ticker change
   const tickerKey = `ticker-${ticker}`;
@@ -67,8 +68,20 @@ const MarketDetail = () => {
       <Typography variant='body1'>{tickersInfo[ticker]['description']}</Typography>
       <Box display={'flex'} flexDirection={'row'}>
         <Box>
-          <Typography variant='h5'>{tickersInfo[ticker]['name']} for the last year</Typography>
-          <TickerChart key={tickerKey} data={tickerData} />
+          <Typography variant="h5">{tickersInfo[ticker]?.name} for the last year</Typography>
+              {loading ? (
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+                  <CircularProgress sx={{ m: 2 }} />
+                </Box>
+              ) : error ? (
+                <Typography variant="body1" color="error">
+                  {error}
+                </Typography>
+              ) : tickerData && tickerData.length > 0 ? (
+                <TickerChart key={tickerKey} data={tickerData} />
+              ) : (
+                <Typography variant="body1">No data available.</Typography>
+              )}
         </Box>
         <Box display={'flex'} flexDirection={'row'}>
           <TickerMenu type={tickersInfo[ticker]['type']} /> 

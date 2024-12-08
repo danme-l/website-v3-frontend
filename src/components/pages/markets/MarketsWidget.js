@@ -9,7 +9,7 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import CircularProgress from '@mui/material/CircularProgress';
 import { useTheme } from '@mui/material';
-// import useDummyMarkets from "../../../hooks/useDummyMarkets";
+import useDummyMarkets from "../../../hooks/useDummyMarkets";
 import useMarkets from '../../../hooks/useMarkets';
 import Collapse from '@mui/material/Collapse';
 import Box from '@mui/material/Box';
@@ -32,7 +32,7 @@ export const MarketsWidget = ({ widgetMode, widgetType }) => {
     .map(([ticker]) => ticker) : []; 
 
   // pass the filtered tickers to the useMarkets hook 
-  // const dailyMarkets = useDummyMarkets();
+  //  const {loading, dailyMarkets} = useDummyMarkets();
   const { loading, data: dailyMarkets } = useMarkets(tickersOfType, widgetType);
 
   function calculatePercentChanges(dataArray) {
